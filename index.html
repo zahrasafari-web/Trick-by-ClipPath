@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            width: 400px;
+            height: 700px;
+            margin: 100px auto;
+            position: relative;
+        }
+        .box>div{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;left: 0;
+        }
+        .box>div{
+            padding: 15px;
+            background-color: rgba(226, 114, 226, 0.62);
+            position: absolute;
+            color: white;
+            text-align: center;
+            transition: 2s;
+        }
+        .box>div:nth-of-type(1){
+            background-image: url(img/me.jpg);
+            background-size: cover;
+        }
+        .box>div:nth-of-type(2){
+            clip-path: polygon(100% 0, 100% 100%, 0 100%, 100% 100%);
+        }
+        .box:hover div:nth-of-type(2){
+            clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);
+
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div></div>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum mollitia odio doloribus qui esse eos, explicabo itaque maiores eaque ad vero sint numquam ex et reiciendis earum dolores dolorum ratione recusandae, quaerat illo! Laboriosam assumenda porro tempore quaerat at id cupiditate unde deleniti commodi ipsa? Aliquid iusto consectetur optio officia, reprehenderit asperiores voluptate quisquam voluptatem doloremque deleniti natus maxime a, dolores odit veritatis ad in maiores ea corrupti ullam iste pariatur mollitia molestias tenetur? Doloremque ratione eius illum sed, repellat dolores nemo totam cupiditate minima, expedita laboriosam quos soluta iure facere cum animi harum vero.</div>
+    </div>
+</body>
+</html>
